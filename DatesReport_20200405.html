@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DatesReport_20200405.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="karavaan-2020-rna---information-report">Karavaan 2020 RnA - Information Report</h1>
+<p>- Purva and Amogh</p>
+<p>05 April 2020</p>
+<hr>
+<h2 id="definitions">Definitions</h2>
+<ul>
+<li><code>We</code> refers to the Karavaan 2020 RnA Coordinators.</li>
+<li><code>You</code> refers to the Karavaan 2020 General Coordinators.</li>
+<li><code>Last Year Team</code> refers to the Karavaan 2019 RnA Team</li>
+<li><code>K-Team</code> or <code>Karavaan Team</code> refers to the entire Karavaan 2020 Team</li>
+</ul>
+<p>Terms highlighted are to be taken case-insensitive for the purpose of this report.</p>
+<hr>
+<h2 id="file-system">File System</h2>
+<ul>
+<li>There exists a <code>RnA - Karavaan 2020</code> folder, which is accessible to:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Mail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purva Parmar</td>
+<td>purva.parmar@students.iiserpune.ac.in</td>
+</tr>
+<tr>
+<td>Amogh Ranade</td>
+<td>amogh.ranade@students.iiserpune.ac.in</td>
+</tr>
+<tr>
+<td>Karthik Vasisht</td>
+<td>karthik.vasisht@students.iiserpune.ac.in</td>
+</tr>
+<tr>
+<td>Shivani Deshpande</td>
+<td>shivani.deshpande@students.iiserpune.ac.in</td>
+</tr>
+<tr>
+<td>Kunjal Parnami</td>
+<td>kunjal.parnami@students.iiserpune.ac.in</td>
+</tr>
+<tr>
+<td>Karavaan</td>
+<td>karavaan@sac.iiserpune.ac.in</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The shortened link:</li>
+</ul>
+<h3 id="httpbitlykrna2020">http://bit.ly/krna2020</h3>
+<p>[Remember. <code>krna2020</code>]</p>
+<ul>
+<li>There's a Google Docs file named &quot;Possible Dates&quot; in it. You are free to access it.</li>
+</ul>
+<hr>
+<h1 id="report-on-possible-dates">Report on Possible Dates</h1>
+<p>The document covers many colleges. We are yet to check on any schools and some of the colleges.</p>
+<h3 id="important-events-for-iiser-pune">Important Events for IISER Pune</h3>
+<h4 id="exams">Exams</h4>
+<table>
+<thead>
+<tr>
+<th>Exam</th>
+<th>Dates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mid Sem Exams</td>
+<td>21 Sep - 26 Sep</td>
+</tr>
+<tr>
+<td>End Sem Exams</td>
+<td>23 Nov - 28 Nov</td>
+</tr>
+<tr>
+<td>KVPY</td>
+<td>01 Nov / 08 Nov</td>
+</tr>
+</tbody>
+</table>
+<h4 id="holidays">Holidays</h4>
+<table>
+<thead>
+<tr>
+<th>Holiday</th>
+<th>Date</th>
+<th>Day</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dussehra</td>
+<td>25 Oct</td>
+<td>Sunday</td>
+</tr>
+<tr>
+<td>Eid-e-Milad</td>
+<td>30 Oct</td>
+<td>Friday</td>
+</tr>
+<tr>
+<td>Diwali</td>
+<td>14 Nov</td>
+<td>Saturday</td>
+</tr>
+</tbody>
+</table>
+<p>Most colleges don't have their 2020-21 Academic Calendar set up yet. So, much of the estimation is based on the 2019-20 Academic Year data.</p>
+<p>The data that the last year team compiled also seems to be based on much of 2018 data.</p>
+<h3 id="suggestion">Suggestion</h3>
+<p>Based on the data, <strong>the best weekend to hold Karavaan 2020 is <code>30 Oct - 31 Oct - 01 Nov</code></strong>, which is a <strong>Fri - Sat - Sun</strong> weekend.</p>
+<p>The Advantages and Risks</p>
+<ul>
+<li>30 Oct is a holiday for Eid-e-Milad, as mentioned above in the Holidays section. We get Friday for use.</li>
+<li>01 Nov can be a possible KVPY exam date. But, we have 30 Oct extra so...</li>
+</ul>
+<p>So far, we have only seen clashes for the following:</p>
+<ul>
+<li>SPPU - Savitribai Phule Pune University</li>
+<li>SLS - Symbiosis Law School</li>
+<li>SSBS - Symbiosis School of Biological Sciences</li>
+</ul>
+<p>Considering the fact that other smaller colleges come under SPPU, the clash may be slightly larger than anticipated here.</p>
+<p>However, <strong>we take any other weekend and the number of clashes are just larger.</strong></p>
+<p>The previous weekend of <code>24 Oct - 25 Oct</code>, and the next weekend of <code>07 Nov - 08 Nov</code> both show higher number of clases than the suggested weekend.</p>
+<p>Also, since the KVPY 2020 date is still uncertain, the <code>07 Nov - 08 Nov</code> is a greater risk too.</p>
+<h3 id="precaution">Precaution</h3>
+<p>Dates are based on the 2019 data mostly, and we might need to wait till the new academic year to see the actual data for most colleges. However, the estimates should be reasonably valid, as we do not expect the exam patterns to change by more than a week.</p>
+<hr>
+<h2 id="targeted-institutes">Targeted Institutes</h2>
+<p>Going with our general theme of Cinema, we tried to find data for institutes like FTII - Film and Television Institute of India, but turned up empty handed.</p>
+<p>We are also yet to collect data for a few institutes which may be more aligned to the theme.</p>
+<hr>
+<h2 id="data-for-schools">Data for Schools</h2>
+<p>Schools generally do not have any useful information on website. It is difficult to collect data from them.</p>
+<p>Here, the Pune residents of the Karavaan Team can come to help. See the next section for details.</p>
+<hr>
+<h2 id="requests-to-the-gcs">Requests to the GCs</h2>
+<ul>
+<li>You can ask the Punekars in the K-Team to ask around about what general events are going on during late October and early November.</li>
+<li>You can ask the people in the K-Team if they know people around in Pune colleges doing courses relating to our theme. Like, anyone studying at FTII for example. A contact over there can prove useful.</li>
+</ul>
+
+</body>
+</html>
