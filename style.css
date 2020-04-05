@@ -1,0 +1,17 @@
+body {
+  color: white !important;
+  background-color: black !important;
+}
+
+a {
+  color: lime;
+}
+
+a:hover {
+  color: cyan;
+  transition: 0.3s;
+}
+
+code {
+  color: orange;
+}
