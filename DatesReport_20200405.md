@@ -7,7 +7,7 @@ _______________
 
 ## Definitions
 
-- `We` refers to the Karavaan 2020 RnA Coordinators. 
+- `We` refers to the Karavaan 2020 RnA Coordinators.
 - `You` refers to the Karavaan 2020 General Coordinators.
 - `Last Year Team` refers to the Karavaan 2019 RnA Team
 - `K-Team` or `Karavaan Team` refers to the entire Karavaan 2020 Team
@@ -35,13 +35,13 @@ ___
 
 [Remember. ```krna2020```]
 
-- There's a Google Docs file named "Possible Dates" in it. You are free to access it. 
+- There's a Google Docs file named "Possible Dates" in it. You are free to access it.
 
-___ 
+___
 
 # Report on Possible Dates
 
-The document covers many colleges. We are yet to check on any schools and some of the colleges. 
+The document covers many colleges. We are yet to check on any schools and some of the colleges.
 
 ### Important Events for IISER Pune
 
@@ -60,7 +60,11 @@ The document covers many colleges. We are yet to check on any schools and some o
 | Dussehra | 25 Oct | Sunday |
 | Eid-e-Milad | 30 Oct | Friday |
 | Diwali | 14 Nov | Saturday |
-
+| Rise of Kalki | 15 Nov | Sunday |
+| End of the World as predicted by Egyptians | 16 Nov | Monday |
+| End of the Mayan calendar (no, it clearly wasn't 2012) | 17 Nov | Tuesday |
+| Yule Ball | 22 Nov | Sunday |
+| Hitler wakes up (Look Who's Back) | 23 Nov | Monday |
 
 Most colleges don't have their 2020-21 Academic Calendar set up yet. So, much of the estimation is based on the 2019-20 Academic Year data.
 
@@ -69,6 +73,18 @@ The data that the last year team compiled also seems to be based on much of 2018
 ### Suggestion
 
 Based on the data, **the best weekend to hold Karavaan 2020 is `30 Oct - 31 Oct - 01 Nov`**, which is a **Fri - Sat - Sun** weekend.
+
+On cue, 1..2..3.. **Penguin Polkaaa**
+
+> Genovia,  
+The land I call my home,  
+From the green clear summer,  
+From blossoming pear trees,  
+Magnificent her mountains and seas,  
+Genovia, Genovia,  
+You're noble, proud and brave,  
+Genovia, Genovia,  
+Forever, will your banner wave
 
 The Advantages and Risks
 
@@ -84,7 +100,7 @@ Considering the fact that other smaller colleges come under SPPU, the clash may 
 
 However, **we take any other weekend and the number of clashes are just larger.**
 
-The previous weekend of `24 Oct - 25 Oct`, and the next weekend of `07 Nov - 08 Nov` both show higher number of clases than the suggested weekend. 
+The previous weekend of `24 Oct - 25 Oct`, and the next weekend of `07 Nov - 08 Nov` both show higher number of clases than the suggested weekend.
 
 Also, since the KVPY 2020 date is still uncertain, the `07 Nov - 08 Nov` is a greater risk too.
 
@@ -98,7 +114,7 @@ ___
 
 ## Targeted Institutes
 
-Going with our general theme of Cinema, we tried to find data for institutes like FTII - Film and Television Institute of India, but turned up empty handed. 
+Going with our general theme of Cinema, we tried to find data for institutes like FTII - Film and Television Institute of India, but turned up empty handed.
 
 We are also yet to collect data for a few institutes which may be more aligned to the theme.
 

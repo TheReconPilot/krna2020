@@ -1,387 +1,617 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>DatesReport_20200405.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<link rel="stylesheet" href="./style.css" type="text/css">
-
-<style>
-/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
-body {
-	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
-	font-size: var(--vscode-markdown-font-size, 14px);
-	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 22px);
-	word-wrap: break-word;
+      <!DOCTYPE html>
+      <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>DatesReport_20200405</title>
+            <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(221, 221, 221); background-color: rgb(33, 33, 33); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(180, 180, 180); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(0, 150, 136); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(180, 180, 180); border-color: rgb(74, 74, 74); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(74, 74, 74); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(74, 74, 74); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(53, 53, 53); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(43, 43, 43); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(74, 74, 74) rgb(74, 74, 74) rgb(59, 59, 59); border-image: initial; background-color: rgb(53, 53, 53); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; overflow-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { overflow-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; overflow-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.markdown-preview pre.editor-colors { user-select: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item input[type="checkbox"] { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview .task-list-item { list-style-type: none; }
+.markdown-preview code { text-shadow: none; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: rgba(221, 221, 221, 0.2);
+  background-color: #141414;
 }
 
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
 }
 
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+pre.editor-colors {
+  background-color: #212121;
+  color: #DDDDDD;
 }
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
+pre.editor-colors .wrap-guide {
+  background-color: #272727;
 }
-
-body.showEditorSelection .code-line {
-	position: relative;
+pre.editor-colors .indent-guide {
+  color: #272727;
 }
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
+pre.editor-colors .invisible-character {
+  color: #373b41;
 }
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
+pre.editor-colors .cursor-line {
+  background-color: #1b1b1b;
 }
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
+pre.editor-colors .gutter {
+  background-color: #212121;
+  color: rgba(221, 221, 221, 0.2);
 }
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
+pre.editor-colors .gutter .line-number.cursor-line {
+  background-color: #1b1b1b;
+  color: rgba(221, 221, 221, 0.2);
 }
-
-.vscode-light.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  color: rgba(221, 221, 221, 0.2);
 }
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
+pre.editor-colors .fold-marker:after,
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after {
+  color: #B2CCD6;
 }
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
+pre.editor-colors .invisible {
+  color: #DDDDDD;
 }
-
-.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
+pre.editor-colors .cursor {
+  color: #009688;
+  border-width: 2px;
 }
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
+pre.editor-colors .selection .region {
+  background-color: #3b3b3b;
 }
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
+pre.editor-colors .search-results .syntax--marker .region {
+  background-color: transparent;
+  border: 1px solid #B2CCD6;
 }
-
-.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
+pre.editor-colors .search-results .syntax--marker.current-result .region {
+  border: 1px solid white;
 }
-
-img {
-	max-width: 100%;
-	max-height: 100%;
+.syntax--comment {
+  color: #545454;
 }
-
-a {
-	text-decoration: none;
+.syntax--keyword {
+  color: #C792EA;
 }
-
-a:hover {
-	text-decoration: underline;
+.syntax--keyword.syntax--control {
+  color: #C792EA;
 }
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
+.syntax--keyword.syntax--control.syntax--elements {
+  color: #B2CCD6;
 }
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
+.syntax--keyword.syntax--operator {
+  color: #89DDF3;
 }
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #82AAFF;
 }
-
-h1, h2, h3 {
-	font-weight: normal;
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #FFCB6B;
 }
-
-table {
-	border-collapse: collapse;
+.syntax--storage {
+  color: #C792EA;
 }
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
+.syntax--constant {
+  color: #F07178;
 }
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
+.syntax--constant.syntax--character.syntax--escape {
+  color: #89DDF3;
 }
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
+.syntax--constant.syntax--numeric {
+  color: #F78C6A;
 }
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left-width: 5px;
-	border-left-style: solid;
+.syntax--constant.syntax--other.syntax--color {
+  color: #89DDF3;
 }
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 1em;
-	line-height: 1.357em;
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #C3E88D;
 }
-
-body.wordWrap pre {
-	white-space: pre-wrap;
+.syntax--constant.syntax--language.syntax--null {
+  color: #FF5370;
 }
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
+.syntax--variable {
+  color: #DDDDDD;
 }
-
-pre code {
-	color: var(--vscode-editor-foreground);
-	tab-size: 4;
+.syntax--variable.syntax--interpolation {
+  color: #eb434c;
 }
-
-/** Theming */
-
-.vscode-light pre {
-	background-color: rgba(220, 220, 220, 0.4);
+.syntax--variable.syntax--parameter.syntax--function {
+  color: #F78C6A;
 }
-
-.vscode-dark pre {
-	background-color: rgba(10, 10, 10, 0.4);
+.syntax--variable.syntax--language {
+  color: #FF5370;
 }
-
-.vscode-high-contrast pre {
-	background-color: rgb(0, 0, 0);
+.syntax--variable.syntax--variable.syntax--object {
+  color: #FFCB6B;
 }
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
+.syntax--invalid.syntax--illegal {
+  background-color: #F07178;
+  color: #212121;
 }
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
+.syntax--string {
+  color: #C3E88D;
 }
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
+.syntax--string.syntax--regexp {
+  color: #89DDF3;
 }
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #FFCB6B;
 }
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
+.syntax--string.syntax--other.syntax--link {
+  color: #F07178;
 }
-
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #545454;
+}
+.syntax--punctuation.syntax--definition.syntax--array,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--string,
+.syntax--punctuation.syntax--definition.syntax--variable {
+  color: #DDDDDD;
+}
+.syntax--punctuation.syntax--definition.syntax--array.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--variable.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--array.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--variable.syntax--end {
+  color: #89DDF3;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #82AAFF;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #FFE082;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #C792EA;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--definition.syntax--entity {
+  color: #89DDF3;
+}
+.syntax--punctuation.syntax--section.syntax--array {
+  color: #89DDF3;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #89DDF3;
+}
+.syntax--punctuation.syntax--separator.syntax--key-value {
+  color: #89DDF3;
+}
+.syntax--punctuation.syntax--terminator {
+  color: #89DDF3;
+}
+.syntax--support.syntax--class {
+  color: #FFCB6B;
+}
+.syntax--support.syntax--function {
+  color: #82AAFF;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #82AAFF;
+}
+.syntax--support.syntax--type {
+  color: #FFCB6B;
+}
+.syntax--support.syntax--variable.syntax--dom {
+  color: #FFCB6B;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #82AAFF;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #DDDDDD;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #C3E88D;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-element {
+  color: #C792EA;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--attribute {
+  color: #C792EA;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #FFCB6B;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #82AAFF;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #F07178;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #FFCB6B;
+}
+.syntax--meta.syntax--class {
+  color: #FFE082;
+}
+.syntax--meta.syntax--delimiter.syntax--period {
+  color: #89DDF3;
+}
+.syntax--meta.syntax--link {
+  color: #FFCB6B;
+}
+.syntax--meta.syntax--require {
+  color: #82AAFF;
+}
+.syntax--meta.syntax--selector {
+  color: #C792EA;
+}
+.syntax--meta.syntax--separator {
+  background-color: #373b41;
+  color: #DDDDDD;
+}
+.syntax--meta.syntax--brace.syntax--round,
+.syntax--meta.syntax--brace.syntax--square {
+  color: #89DDF3;
+}
+.syntax--none {
+  color: #DDDDDD;
+}
+.syntax--markup.syntax--bold {
+  color: #FFCB6B;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #C792EA;
+}
+.syntax--markup.syntax--deleted {
+  color: #F07178;
+}
+.syntax--markup.syntax--italic {
+  color: #C792EA;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #82AAFF;
+}
+.syntax--markup.syntax--inserted {
+  color: #C3E88D;
+}
+.syntax--markup.syntax--list {
+  color: #F07178;
+}
+.syntax--markup.syntax--quote {
+  color: #FFCB6B;
+}
+.syntax--markup.syntax--raw.syntax--inline {
+  color: #C3E88D;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--markup.syntax--heading {
+  color: #C3E88D;
+}
+pre.editor-colors[mini] .scroll-view {
+  padding-left: 1px;
+}
+pre.editor-colors .highlight .region.bracket-matcher {
+  z-index: inherit;
+}
+.bracket-matcher .region {
+  border-bottom: 1px solid #009688;
+  box-sizing: border-box;
+  background-color: rgba(221, 221, 221, 0.1);
+  box-shadow: inset 0 -1px 0 #009688;
+}
+pre.editor-colors .spell-check-misspelling .region {
+  z-index: auto;
+}
+.syntax--jsx.syntax--component {
+  color: #F07178;
+}
+pre.editor-colors .syntax--source.syntax--js.syntax--jsx .syntax--jsx .syntax--entity.syntax--other.syntax--attribute-name {
+  font-style: normal;
+}
+.syntax--css .syntax--support.syntax--constant {
+  color: #89DDF3;
+}
+.syntax--css .syntax--support.syntax--property-name {
+  color: #73d1c8;
+}
+.syntax--css .syntax--keyword.syntax--unit {
+  color: #F78C6A;
+}
+.syntax--css .syntax--constant.syntax--numeric {
+  color: #FFE082;
+}
+.syntax--css .syntax--constant.syntax--color {
+  color: #FFE082;
+}
+.syntax--css .syntax--constant.syntax--color .syntax--punctuation {
+  color: currentColor;
+}
+.syntax--css .syntax--entity.syntax--tag {
+  color: #B2CCD6;
+}
+.syntax--css .syntax--entity.syntax--id {
+  color: #C792EA;
+}
+.syntax--css .syntax--punctuation.syntax--delimiter {
+  color: #89DDF3;
+}
+.syntax--css .syntax--punctuation.syntax--delimiter + .syntax--constant.syntax--numeric:not(.syntax--color) {
+  color: #F78C6A;
+}
+[data-grammar*="gfm"] .syntax--markup.syntax--underline.syntax--link {
+  color: #ff869a;
+}
+[data-grammar*="gfm"] .syntax--markup.syntax--underline.syntax--link span.syntax--punctuation {
+  color: #FF5370;
+}
+[data-grammar*="gfm"] .syntax--markup.syntax--strike {
+  position: relative;
+  color: rgba(221, 221, 221, 0.5);
+}
+[data-grammar*="gfm"] .syntax--markup.syntax--strike::after {
+  content: "";
+  position: absolute;
+  top: calc(54%);
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(221, 221, 221, 0.5);
+}
+[data-grammar*="gfm"] .syntax--table .syntax--border {
+  color: rgba(221, 221, 221, 0.5);
+}
+[data-grammar*="gfm"] .syntax--markup.syntax--heading {
+  color: #82AAFF;
+}
+[data-grammar*="gfm"] .syntax--punctuation.syntax--definition.syntax--begin,
+[data-grammar*="gfm"] .syntax--punctuation.syntax--definition.syntax--end {
+  color: #82AAFF;
+}
+[data-grammar*="gfm"] .syntax--punctuation.syntax--definition.syntax--begin + span:not(.syntax--function.syntax--parameter) {
+  color: #9cbbff;
+}
+.syntax--html .syntax--meta.syntax--tag.syntax--doctype,
+.syntax--jsx .syntax--meta.syntax--tag.syntax--doctype {
+  color: #C792EA;
+}
+.syntax--html .syntax--punctuation.syntax--tag,
+.syntax--jsx .syntax--punctuation.syntax--tag {
+  color: #89DDF3;
+}
+.syntax--js .syntax--constant {
+  color: #DDDDDD;
+}
+.syntax--js .syntax--support.syntax--variable.syntax--property {
+  color: #DDDDDD;
+}
+.syntax--js .syntax--support.syntax--variable.syntax--property.syntax--dom {
+  color: #82AAFF;
+}
+.syntax--js .syntax--entity.syntax--name.syntax--type {
+  color: #FFCB6B;
+}
+.syntax--js .syntax--variable.syntax--property {
+  color: #82AAFF;
+}
+.syntax--js .syntax--variable.syntax--other.syntax--object {
+  color: #DDDDDD;
+}
+.syntax--js .syntax--variable.syntax--other.syntax--object.syntax--property {
+  color: #82AAFF;
+}
+.syntax--js .syntax--string.syntax--quoted.syntax--template .syntax--other.syntax--object.syntax--property {
+  color: #C3E88D;
+}
+.syntax--js .syntax--constant.syntax--numeric {
+  color: #F78C6A;
+}
+.syntax--js .syntax--constant.syntax--boolean {
+  color: #F07178;
+}
+.syntax--js .syntax--punctuation.syntax--begin,
+.syntax--js .syntax--punctuation.syntax--end,
+.syntax--js .syntax--delimiter.syntax--object.syntax--comma,
+.syntax--js .syntax--brace.syntax--curly {
+  color: #89DDF3;
+}
+.syntax--js .syntax--export .syntax--variable.syntax--default {
+  color: #C792EA;
+}
+.syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double {
+  color: #C3E88D;
+}
+.syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double > * {
+  color: currentColor;
+}
+.syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double > *.syntax--punctuation.syntax--begin,
+.syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double > *.syntax--punctuation.syntax--end {
+  color: #89DDF3;
+}
+.syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted {
+  color: #C3E88D;
+}
+.syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted * {
+  color: currentColor;
+}
+.syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted *.syntax--punctuation.syntax--begin,
+.syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted *.syntax--punctuation.syntax--end {
+  color: #89DDF3;
+}
+.syntax--json .syntax--meta.syntax--structure.syntax--dictionary .syntax--string.syntax--quoted {
+  color: #C792EA;
+}
+.syntax--json .syntax--meta.syntax--structure.syntax--dictionary .syntax--string.syntax--quoted .syntax--punctuation.syntax--string {
+  color: currentColor;
+}
+.syntax--php .syntax--keyword.syntax--operator.syntax--assignment {
+  color: #C792EA;
+}
+.syntax--php .syntax--meta.syntax--object {
+  color: #82AAFF;
+}
+.syntax--php .syntax--meta.syntax--arguments {
+  color: #C792EA;
+}
+.syntax--python .syntax--meta.syntax--function-call {
+  color: #82AAFF;
+}
+.syntax--python .syntax--meta.syntax--function-call .syntax--punctuation {
+  color: #89DDF3;
+}
+.syntax--python .syntax--meta.syntax--function-call .syntax--arguments {
+  color: #7986CB;
+}
+.syntax--python .syntax--meta.syntax--function-call .syntax--arguments.syntax--punctuation {
+  color: #89DDF3;
+}
+.syntax--python .syntax--variable.syntax--self {
+  color: #FF5370;
+}
+.syntax--python .syntax--meta .syntax--punctuation.syntax--inheritance,
+.syntax--python .syntax--meta .syntax--punctuation.syntax--section {
+  color: #89DDF3;
+}
+.syntax--python .syntax--variable.syntax--parameter {
+  color: #89DDF3;
+}
+.syntax--python .syntax--keyword.syntax--operator {
+  color: #C792EA;
+}
+.syntax--ruby .syntax--punctuation.syntax--separator {
+  color: #89DDF3;
+}
+.syntax--ruby .syntax--variable.syntax--block {
+  color: #F07178;
+}
+.syntax--ruby .syntax--variable.syntax--instance {
+  color: #F07178;
+}
+.syntax--ruby .syntax--variable.syntax--instance .syntax--punctuation {
+  color: currentColor;
+}
 </style>
-
-<style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
-}
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
-
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
-
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
-}
-</style>
-
-<style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-	padding: 0 12px;
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-code {
-	font-size: 14px;
-	line-height: 19px;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
-}
-
-</style>
-
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-</head>
-<body>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
-    });
-  </script>
-<h1 id="karavaan-2020-rna---information-report">Karavaan 2020 RnA - Information Report</h1>
+        </head>
+        <body class='markdown-preview' data-use-github-style><h1 id="karavaan-2020-rna---information-report">Karavaan 2020 RnA - Information Report</h1>
 <p>- Purva and Amogh</p>
 <p>05 April 2020</p>
 <hr>
 <h2 id="definitions">Definitions</h2>
 <ul>
-<li><code>We</code> refers to the Karavaan 2020 RnA Coordinators.</li>
-<li><code>You</code> refers to the Karavaan 2020 General Coordinators.</li>
-<li><code>Last Year Team</code> refers to the Karavaan 2019 RnA Team</li>
-<li><code>K-Team</code> or <code>Karavaan Team</code> refers to the entire Karavaan 2020 Team</li>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">We</code> refers to the Karavaan 2020 RnA Coordinators.</li>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">You</code> refers to the Karavaan 2020 General Coordinators.</li>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Last Year Team</code> refers to the Karavaan 2019 RnA Team</li>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">K-Team</code> or <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Karavaan Team</code> refers to the entire Karavaan 2020 Team</li>
 </ul>
 <p>Terms highlighted are to be taken case-insensitive for the purpose of this report.</p>
 <hr>
 <h2 id="file-system">File System</h2>
 <ul>
-<li>There exists a <code>RnA - Karavaan 2020</code> folder, which is accessible to:</li>
+<li>There exists a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">RnA - Karavaan 2020</code> folder, which is accessible to:</li>
 </ul>
 <table>
 <thead>
@@ -390,40 +620,38 @@ code {
 <th>Mail</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Purva Parmar</td>
-<td>purva.parmar@students.iiserpune.ac.in</td>
+<td><a href="mailto:purva.parmar@students.iiserpune.ac.in">purva.parmar@students.iiserpune.ac.in</a></td>
 </tr>
 <tr>
 <td>Amogh Ranade</td>
-<td>amogh.ranade@students.iiserpune.ac.in</td>
+<td><a href="mailto:amogh.ranade@students.iiserpune.ac.in">amogh.ranade@students.iiserpune.ac.in</a></td>
 </tr>
 <tr>
 <td>Karthik Vasisht</td>
-<td>karthik.vasisht@students.iiserpune.ac.in</td>
+<td><a href="mailto:karthik.vasisht@students.iiserpune.ac.in">karthik.vasisht@students.iiserpune.ac.in</a></td>
 </tr>
 <tr>
 <td>Shivani Deshpande</td>
-<td>shivani.deshpande@students.iiserpune.ac.in</td>
+<td><a href="mailto:shivani.deshpande@students.iiserpune.ac.in">shivani.deshpande@students.iiserpune.ac.in</a></td>
 </tr>
 <tr>
 <td>Kunjal Parnami</td>
-<td>kunjal.parnami@students.iiserpune.ac.in</td>
+<td><a href="mailto:kunjal.parnami@students.iiserpune.ac.in">kunjal.parnami@students.iiserpune.ac.in</a></td>
 </tr>
 <tr>
 <td>Karavaan</td>
-<td>karavaan@sac.iiserpune.ac.in</td>
+<td><a href="mailto:karavaan@sac.iiserpune.ac.in">karavaan@sac.iiserpune.ac.in</a></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <ul>
 <li>The shortened link:</li>
 </ul>
 <h3 id="httpbitlykrna2020"><a href="http://bit.ly/krna2020">http://bit.ly/krna2020</a></h3>
-<p>[Remember. <code>krna2020</code>]</p>
+<p>[Remember. <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">krna2020</code>]</p>
 <ul>
-<li>There's a Google Docs file named &quot;Possible Dates&quot; in it. You are free to access it.</li>
+<li>There's a Google Docs file named "Possible Dates" in it. You are free to access it.</li>
 </ul>
 <hr>
 <h1 id="report-on-possible-dates">Report on Possible Dates</h1>
@@ -437,8 +665,7 @@ code {
 <th>Dates</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Mid Sem Exams</td>
 <td>21 Sep - 26 Sep</td>
 </tr>
@@ -450,8 +677,7 @@ code {
 <td>KVPY</td>
 <td>01 Nov / 08 Nov</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h4 id="holidays">Holidays</h4>
 <table>
 <thead>
@@ -461,8 +687,7 @@ code {
 <th>Day</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Dussehra</td>
 <td>25 Oct</td>
 <td>Sunday</td>
@@ -477,12 +702,40 @@ code {
 <td>14 Nov</td>
 <td>Saturday</td>
 </tr>
-</tbody>
-</table>
+<tr>
+<td>Rise of Kalki</td>
+<td>15 Nov</td>
+<td>Sunday</td>
+</tr>
+<tr>
+<td>End of the World as predicted by Egyptians</td>
+<td>16 Nov</td>
+<td>Monday</td>
+</tr>
+<tr>
+<td>End of the Mayan calendar (no, it clearly wasn't 2012)</td>
+<td>17 Nov</td>
+<td>Tuesday</td>
+</tr>
+<tr>
+<td>Yule Ball</td>
+<td>22 Nov</td>
+<td>Sunday</td>
+</tr>
+<tr>
+<td>Hitler wakes up (Look Who's Back)</td>
+<td>23 Nov</td>
+<td>Monday</td>
+</tr>
+</tbody></table>
 <p>Most colleges don't have their 2020-21 Academic Calendar set up yet. So, much of the estimation is based on the 2019-20 Academic Year data.</p>
 <p>The data that the last year team compiled also seems to be based on much of 2018 data.</p>
 <h3 id="suggestion">Suggestion</h3>
-<p>Based on the data, <strong>the best weekend to hold Karavaan 2020 is <code>30 Oct - 31 Oct - 01 Nov</code></strong>, which is a <strong>Fri - Sat - Sun</strong> weekend.</p>
+<p>Based on the data, <strong>the best weekend to hold Karavaan 2020 is <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">30 Oct - 31 Oct - 01 Nov</code></strong>, which is a <strong>Fri - Sat - Sun</strong> weekend.</p>
+<p>On cue, 1..2..3.. <strong>Penguin Polkaaa</strong></p>
+<blockquote>
+<p>Genovia,<br>The land I call my home,<br>From the green clear summer,<br>From blossoming pear trees,<br>Magnificent her mountains and seas,<br>Genovia, Genovia,<br>You're noble, proud and brave,<br>Genovia, Genovia,<br>Forever, will your banner wave</p>
+</blockquote>
 <p>The Advantages and Risks</p>
 <ul>
 <li>30 Oct is a holiday for Eid-e-Milad, as mentioned above in the Holidays section. We get Friday for use.</li>
@@ -496,8 +749,8 @@ code {
 </ul>
 <p>Considering the fact that other smaller colleges come under SPPU, the clash may be slightly larger than anticipated here.</p>
 <p>However, <strong>we take any other weekend and the number of clashes are just larger.</strong></p>
-<p>The previous weekend of <code>24 Oct - 25 Oct</code>, and the next weekend of <code>07 Nov - 08 Nov</code> both show higher number of clases than the suggested weekend.</p>
-<p>Also, since the KVPY 2020 date is still uncertain, the <code>07 Nov - 08 Nov</code> is a greater risk too.</p>
+<p>The previous weekend of <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">24 Oct - 25 Oct</code>, and the next weekend of <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">07 Nov - 08 Nov</code> both show higher number of clases than the suggested weekend.</p>
+<p>Also, since the KVPY 2020 date is still uncertain, the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">07 Nov - 08 Nov</code> is a greater risk too.</p>
 <h3 id="precaution">Precaution</h3>
 <p>Dates are based on the 2019 data mostly, and we might need to wait till the new academic year to see the actual data for most colleges. However, the estimates should be reasonably valid, as we do not expect the exam patterns to change by more than a week.</p>
 <hr>
@@ -513,7 +766,5 @@ code {
 <ul>
 <li>You can ask the Punekars in the K-Team to ask around about what general events are going on during late October and early November.</li>
 <li>You can ask the people in the K-Team if they know people around in Pune colleges doing courses relating to our theme. Like, anyone studying at FTII for example. A contact over there can prove useful.</li>
-</ul>
-
-</body>
-</html>
+</ul></body>
+      </html>
